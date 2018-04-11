@@ -1,0 +1,24 @@
+
+adb完整的数据处理流程
+
+1：PC端adb server发送cmd到小机端
+
+2：adbd(adb daemon)的output thread从/dev/android_usb读取到cmd并解析
+
+（adbd和内核usb driver通过/dev/android_usb进行数据交互）
+
+3：output_thread将解析的cmd写到socketpair的A端
+
+4：fdevent_loop通过select socketpair的B端，得知A端有数据写入，B端可读，然后读取cmd，
+
+进行处理（handle_packet）
+
+5：处理完后将结果写到socketpair的B端
+
+6：Input_thread阻塞式读取socketpair的A端
+
+7：Input_thread读取到数据后，写入/dev/android_usb
+
+8：由usb driver将response发给pc端
+
+ output_thread负责读取/dev/android_usb，Input_thread负责写入
