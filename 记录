@@ -1,0 +1,5 @@
+查看Django版本
+1.python -m diango --version
+2.pyhton
+>>>import django
+>>>django.get_version()
