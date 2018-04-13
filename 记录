@@ -1,5 +1,25 @@
-查看Django版本
-1.python -m diango --version
-2.pyhton
+1、查看Django版本
+第一种
+python -m diango --version
+第二种
+pyhton
 >>>import django
 >>>django.get_version()
+2、创建Django项目
+django-admin startproject myblog
+3、启动服务(默认为8000)
+python mange.py runserver
+python mange.py runserver 9000
+4、创建应用
+python manage.py startapp log
+添加应用到settings.py中的INSTALLED_APPS里
+5、应用目录
+migrations 数据移植（迁移）模块
+  _init_.py
+ _init_.py
+ admin.py 应用的后台管理系统配置
+ apps.py 该应用配置，Django-1.9以后自动生成
+ models.py 数据模块，使用ORM框架
+ tests.py 自动化测试模块
+ views.py
+  
