@@ -1,0 +1,122 @@
+一、SUblime  使用
+   快捷键
+         crtl+b+k
+         crtl+s    保存文档
+         crtl+shift+s  文档另存为
+    四种创建文本的方式
+         1）左上角文件--->新建文件
+         2）右键文件夹--->新建文件    （建议使用）
+         3）文件标题栏双击--->创建文件--->保存
+         4）crtl+n--->新建文件
+    文件重命名
+           鼠标放在文件上--->右键--->重命名--->enter
+           esc取消重命名
+    每一个文件写完之后 必须进行crtl+s
+    要养成保存文档的习惯
+一，基础技巧
+	1，谷歌浏览器的使用
+		谷歌首页不能访问
+			在地址栏输入 ：www.baidu.com
+			保存书签 --> ctrl + d
+			显示书签栏：设置 --> 书签 --> 显示书签栏
+	2，输入法
+		ctrl + 空格   切换输入法
+二，HTML初识
+	1，什么是纯文本 txt
+		只能保存文本内容，不能保存文本样式
+		office 中的word或者ppt等都不是纯文本，他们可以记录样式
+		HTML css JS 文件都是纯文本文件，占用内存非常小，便于传输
+		特点：
+			1）只有文本，没有格式
+			2）文本编辑器可读，系统纯文本编辑器，sublime和编程的编译器都可读，
+	2，HTML是负责描述文本语义的语言
+		HTML全称：HyperText Markup Language
+		.html就是HTML文件的后缀名
+		养成使用ctrl + s 保存文档的习惯
+		养成使用F5或者ctrl + R 刷新页面的习惯
+		html通过标签对给文本添加语义
+		html只能添加语义，别的什么都做不了
+		业界的标准：
+			html 负责文档语义结构
+			CSS负责文本样式
+			javascript 负责页面行为动作
+三，sublime的使用
+	1，sublime 是华丽的意思
+		快捷键：
+			ctrl + 滚轮   放大缩小
+			ctrl+shift+d	复制当前行到下一行
+			ctrl+shift+k	删除当前行
+			ctrl+z 撤销上一步操作
+			ctrl+shift+z
+			ctrl+shift+↑	上移当前行
+			ctrl+shift+↓	下移当前行
+			ctrl + enter    向下换行
+			ctrl + shift + enter  向上换行
+			ctrl + k + b  隐藏显示左边工具栏
+			ctrl + tab  切换选项卡
+			tab 补全标签对   （针对html文件）
+四，HTML骨架和基本语法
+	html4.01之前的骨架   html:xt     tab
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+		<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+			<title>Document</title>
+		</head>
+		<body>
+
+		</body>
+		</html>
+
+		<html>
+			<head>
+
+			</head>
+			<body>
+
+			</body>
+		</html>
+		head标签中，描述网页的配置；
+		body中的内容，才是用户可以看见的内容。
+		DocType Definition   文档头声明  简称DTD
+		W3C就是做出web规范的机构
+		DTD作用：告诉浏览器，这是一个什么类型的文档
+五，基本语法
+	标签对：
+		elment   元素
+		<element attribute='value'></element>
+		<元素名 属性名='属性值'></元素名>
+	H5基本骨架   html:5  tab   或者   ！    tab
+		<!DOCTYPE html>            DTD
+		<html lang="en">    html标签   lang=‘en’语言英语
+		<head>              配置标签
+			<meta charset="UTF-8">    charset="UTF-8"  设置字符集
+			<title>Document</title>    文档标题
+		</head>
+		<body>
+			这里边就是展示给用户的内容
+		</body>
+		</html>
+	设置字符集：charset = UTF-8（常见）     gbk    gb2312
+	闭合标签： 双标签
+		成对出现的标签也叫闭合标签，它通常包含开始标签和结束标签，内容前面的尖括号是开始标签，带斜杠的是结束标签。
+		<body>内容</body>
+	自封闭标签：单标签
+		一些标签是没有内容的，这样结束标签就显得没有必要，所以在开始标签中把它结束，就构成了“自闭合标签”。
+		<XXX />     <br />  <hr />  <img src="" alt="" />
+	在html5中，标签规则宽泛，大小写不限制，闭合标签没有闭合不报错
+	但是H5中推荐使用小写字母，闭合标签一定要闭合
+	元素：标签+内容
+    	html有父元素和子元素，被包含的叫子元素，如html是head的父元素。它们是父子关系，head和body是兄弟关系
+    属性：元素可以加属性，用属性更精确的控制元素的显示。
+    	<a href="www.baidu.com" target="_blank">测试链接</a>   href就是属性，它的属性值是链接
+   		ps:属性值需要加引号
+
+
+
+
+
+
+
+
